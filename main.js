@@ -57,7 +57,7 @@ if (opts['server']) require('./server')(global.conn, PORT)
 
 
 
-conn.connectOptions.maxQueryResponseTime = 60_000
+
 if (opts['test']) {
   conn.user = {
     jid: '2219191@s.whatsapp.net',
@@ -120,10 +120,10 @@ global.reloadHandler = function () {
     conn.off('group-participants-update', conn.onParticipantsUpdate)
     conn.off('CB:action,,call', conn.onCall)
   }
-  conn.welcome = 'Hai, @user!\nSelamat datang di grup @subject'
-  conn.bye = 'Selamat tinggal @user!'
-  conn.spromote = '@user sekarang admin!'
-  conn.sdemote = '@user sekarang bukan admin!'
+  conn.welcome = '*WELCOME*, @user\nSelamat datang @user di grup @subject\n\nJangan Lupa Baca Deskripsi Dibawah Ini @desc\n\nIntro Ngab\n\n❍➣ NAMA  :\n❍➣ FOTO  :\n❍➣ UMUR  :\n❍➣ IG :\n❍➣ ASKOT :\nINTRO CUKUP SEKALI DAN TERIMAKASIH\nBACA DESK GRUP DAN RULES BIAR GAK SALAH PAHAM\nKETIK #menu UNTUK MENGGUNAKAN BOT\nCALL/VC = BLOK OTOMATIS\nFOLLOW AKUN OWNER\n➣https://www.instagram.com/ythomeanime/\n➣https://youtube.com/channel/UC7SydwUESoyOQ3qZZuoaNHw'
+  conn.bye = 'Selamat Tinggal @user!\nTerimakasih Telah Bergabung Di Grup\n\nKalo Balik Jangan Lupa Bawa Gorengan Buat Anggota Disini'
+  conn.spromote = '@user Sekarang Admin!'
+  conn.sdemote = '@user Sekarang Bukan Admin!'
   conn.handler = handler.handler
   conn.onDelete = handler.delete
   conn.onParticipantsUpdate = handler.participantsUpdate
