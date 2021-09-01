@@ -1,8 +1,10 @@
 global.DeveloperMode = 'false' //true Or false
-global.linkGC = ['https://chat.whatsapp.com/Lb4Emjih98rBiCZiZoS2eM', 'https://chat.whatsapp.com/FrluVyY5kBRIhY6yKfH4DI']
-global.owner = ['6281806695954', '6282256115584', '6285713964963']// Put your number here
+global.linkGC = ['https://chat.whatsapp.com/GhFzeiOGDyM9z20rPrU6Tz']
+global.channelYT = ['https://youtube.com/channel/UC_GaCHzfGGH6Or_E87guvxQ'] 
+global.owner = ['6281806695954']// Put your number here
 global.mods = ['6281806695954'] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+global.prems = ['13172021849','6281806695954','6289644913986','628978887128','6282180228860','6289654027829','6285812638897','6285156800599','6281230506190']// Premium user has unlimited limit
+global.vip = ['13172021849','6282180228860','6281806695954','6285812638897','6285812638897','6285156800599','6281230506190']//ip user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -13,21 +15,24 @@ global.APIs = { // API Prefix
   dzx: 'https://api.dhamzxploit.my.id',
   zahir: 'https://zahirr-web.herokuapp.com',
   zeks: 'https://api.zeks.xyz',
-  pencarikode: 'https://pencarikode.xyz'
+  pencarikode: 'https://pencarikode.xyz',
+  aditapi: 'rias-api.heroku.app.com'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'd90a9e986e18778b',
+  'https://api.xteam.xyz': 'acb893e6feef1416',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
-  'https://pencarikode.xyz': 'pais'
+  'https://pencarikode.xyz': 'pais',
+  'https://rias-api.herokuapp.com': 'Rias',
+  'https://zyura.herokuapp.com': 'Zyura'
 }
 
 // Sticker WM
 global.packname = 'Reisan Gans'
-global.author = 'ReiBot Is The Best'
+global.author = 'REIBot Is The Best'
 
-global.multiplier = 39 // The higher, The harder levelup
+global.multiplier = 1000 // The higher, The harder levelup
 
 let fs = require('fs')
 let chalk = require('chalk')
